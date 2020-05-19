@@ -1,0 +1,49 @@
+// $blue: #47E4FF;
+// $pink: #FF5E98;
+// $purple: #7d55ff;
+$purple: #3f5efb;
+$pink: #fc466b;
+// $pink: #FF4E50;
+$yellow: #F9D423;
+$blue: #3498db;
+$green: #2ecc71;
+$black: #000;
+$light-black: #212121;
+$white: #fcfcfc;
+$random: random(45) + deg;
+
+.purple { color: $purple; }
+.pink { color: $pink; }
+// $pink: #FF4E50;
+.yellow { color: $yellow; }
+.blue { color: $blue; }
+.gteen { color: $green; }
+.black { color: $black; }
+.light-black { color: $light-black; }
+.white { color: $white; }
+
+.purple-hover:hover { color: $purple; }
+.pink-hover:hover { color: $pink; }
+.yellow-hover:hover { color: $yellow; }
+.blue-hover:hover { color: $blue; }
+.gteen-hover:hover { color: $green; }
+.black-hover:hover { color: $black; }
+.light-black-hover:hover { color: $light-black; }
+.white-hover:hover { color: $white; }
+
+.purple-fill-hover:hover { fill: $purple; }
+.purple-fill { fill: $purple; }
+.pink-fill-hover:hover { fill: $pink; }
+.pink-fill { fill: $pink; }
+.yellow-fill-hover:hover { fill: $yellow; }
+.yellow-fill { fill: $yellow; }
+.blue-fill-hover:hover { fill: $blue; }
+.blue-fill { fill: $blue; }
+.gteen-fill-hover:hover { fill: $green; }
+.gteen-fill { fill: $green; }
+.black-fill-hover:hover { fill: $black; }
+.black-fill { fill: $black; }
+.light-black-fill { fill: $light-black; }
+.light-black-fill-hover:hover { fill: $light-black; }
+.white-fill-hover:hover { fill: $white; }
+.white-fill { fill: $white; }
