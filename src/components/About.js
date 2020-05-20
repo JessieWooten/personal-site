@@ -1,20 +1,49 @@
 import React from "react";
-const aboutStyle = {
-  minHeight: "300px",
-};
+import { Container, Row, Col } from "./Layout.js";
+import JessiePic from "../assets/jessie_720.jpg";
+import styled from "styled-components";
 
 const About = () => (
-  <section
-    className="w-50 py-10 px-8 sm:px-20 lg:px-56 flex items-center justify-center text-center"
-    style={aboutStyle}
-  >
-    <p className="text-xl font-bold">
-      I am a versatile developer with 4 years experience building complex single
-      page web applications, hybrid mobile applications, and responsive web
-      sites. I am a self starter with a passion for web technologies and using
-      the web stack to solve unique problems.
-    </p>
-  </section>
+  // <section
+  //   className="w-50 py-10 px-8 sm:px-20 lg:px-56 flex items-center justify-center text-center"
+  //   style={aboutStyle}
+  // >
+  <Container className="py-56 px-8 white-bg">
+    <Row className="w-full">
+      <h2 className="title pb-8">About Me</h2>
+    </Row>
+    <Row>
+      <Col className="pr-8 w-full md:w-1/3">
+        <ImageWrapper className="m-auto md:m-0">
+          <img className="me" alt="me" src={JessiePic} />
+        </ImageWrapper>
+      </Col>
+      <Col className="w-full md:w-2/3">
+        <p className="text">
+          I am a self-taught developer from Nashville, TN with a passion for
+          solving unique problems through web technologies. I have spent the
+          last 4 years building complex single page web applications, hybrid
+          mobile applications, and responsive web sites. I love what I do!
+        </p>
+      </Col>
+    </Row>
+  </Container>
+  // </section>
 );
 
 export default About;
+
+const ImageWrapper = styled.div`
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
+  & img.me {
+    height: 100%;
+    max-width: 300%;
+    width: auto;
+  }
+`;
