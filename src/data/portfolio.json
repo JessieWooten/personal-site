@@ -1,0 +1,38 @@
+[
+  {
+    "backgroundImg": "linear-gradient(#CC3332, #CC3332)",
+    "foregroundImg": "http://localhost:3000/static/media/logo.jpg",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and supporting backend service written in Vue.js, Node.js, Swift, and Java."
+  },
+  {
+    "foregroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
+  },
+  {
+    "foregroundImg": "http://localhost:3000/static/media/FunpastaWeb.3aec0015.png",
+    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
+  },
+  {
+    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "foregroundImg": "http://localhost:3000/static/media/FunpastaWeb.3aec0015.png",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and supporting backend service written in Vue.js, Node.js, Swift, and Java."
+  },
+  {
+    "foregroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
+  },
+  {
+    "foregroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
+  }
+]
