@@ -115,7 +115,7 @@ const Hero = () => {
           </a>
         </div>
       </section>
-      <div className="hero-wrapper-wedge" />
+      <div className="wedge-right" />
     </header>
   );
 };
