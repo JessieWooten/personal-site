@@ -1,0 +1,83 @@
+.fade-in-section {
+  opacity: 0;
+  filter: blur(4px);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  filter: blur(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide-in-left-with-fade {
+  animation: slideInLeftWithFade;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInLeftWithFade {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slide-in-right-with-fade {
+  animation: slideInRightWithFade;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInRightWithFade {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slide-in-bottom-with-fade {
+  animation: slideInBottomWithFade;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInBottomWithFade {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate200ms {
+  animation-duration: 200ms;
+}
+.animate400ms {
+  animation-duration: 400ms;
+}
+.animate600ms {
+  animation-duration: 600ms;
+}
+.animate800ms {
+  animation-duration: 800ms;
+}
+.animate2s {
+  animation-duration: 2s;
+}
+.animate1s {
+  animation-duration: 1s;
+}
+.animate3s {
+  animation-duration: 3s;
+}
