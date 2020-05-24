@@ -4,9 +4,13 @@ export const Container = ({
   children = null,
   className = "",
   overwriteClasses = false,
+  style = {},
 }) => {
   return (
-    <div className={`${overwriteClasses ? "" : "w-full"} ${className}`}>
+    <div
+      className={`${overwriteClasses ? "" : "w-full"} ${className}`}
+      style={style}
+    >
       {children}
     </div>
   );
@@ -16,20 +20,26 @@ export const Row = ({
   className = "",
   fullWidth = false,
   overwriteClasses = false,
+  style = {},
 }) => {
   return (
     <div
       className={`${
         overwriteClasses
           ? ""
-          : `${fullWidth ? "w-full" : "in-grid"} flex flex-wrap md:flex-no-wrap`
+          : `${fullWidth ? "w-full" : "in-grid"} flex flex-wrap`
       } ${className}`}
+      style={style}
     >
       {children}
     </div>
   );
 };
 
-export const Col = ({ children = null, className = "" }) => {
-  return <div className={`${className}`}>{children}</div>;
+export const Col = ({ children = null, className = "", style = {} }) => {
+  return (
+    <div className={`${className}`} style={style}>
+      {children}
+    </div>
+  );
 };
