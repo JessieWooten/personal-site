@@ -1,38 +1,29 @@
 [
   {
-    "backgroundImg": "linear-gradient(#CC3332, #CC3332)",
-    "foregroundImg": "http://localhost:3000/static/media/logo.jpg",
+    "foregroundImg": "FunpastaWeb2.png",
+    "backgroundImg": "linear-gradient(#E86261, #CC3332)",
+    "title": "Fun Pasta Fundraising",
+    "description": "Complete website redesign, mobile fundraising app, and supporting backend service.",
+    "tech": "Vue.js, Node.js, Swift, Java."
+  },
+  {
+    "foregroundImg": "SimpleWeather.png",
+    "backgroundImg": "linear-gradient(#3B4A51, #1B2325)",
+    "title": "Simple Weather",
+    "description": "A Google Chrome extension that gives a simple weather forecast.",
+    "tech": "React.js, Typescript, Node.js, Express, Heroku."
+  },
+  {
+    "foregroundImg": "iPad-and-iPhone-with-logo.png",
+    "backgroundImg": "linear-gradient(#E19377, #C05A42)",
+    "title": "Band Director",
+    "description": "A mobile app for band leaders to share chord changes in real time with their band. Band members receive changes on their device instantly, allowing the leader to take the band on an impromtu musical journey.",
+    "tech": "Vue.js, Swift, Java."
+  },
+  {
+    "backgroundImg": "linear-gradient(#9FDDC4, #66B892)",
+    "foregroundImg": "bkon-developer-iphone.png",
     "title": "Fun Pasta Fundraising",
     "description": "Complete website redesign, mobile fundraising app, and supporting backend service written in Vue.js, Node.js, Swift, and Java."
-  },
-  {
-    "foregroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
-  },
-  {
-    "foregroundImg": "http://localhost:3000/static/media/FunpastaWeb.3aec0015.png",
-    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
-  },
-  {
-    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "foregroundImg": "http://localhost:3000/static/media/FunpastaWeb.3aec0015.png",
-    "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and supporting backend service written in Vue.js, Node.js, Swift, and Java."
-  },
-  {
-    "foregroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
-  },
-  {
-    "foregroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "backgroundImg": "http://localhost:3000/static/media/jessie_720.c9b9eee9.jpg",
-    "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and Mobile app is written in Vue.js, Swift, and Java."
   }
 ]
