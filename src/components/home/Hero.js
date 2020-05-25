@@ -2,7 +2,6 @@ import React from "react";
 import IosSwitch from "react-ionicons/lib/IosSwitch";
 import PhonePortrait from "react-ionicons/lib/IosPhonePortrait";
 import IosLaptop from "react-ionicons/lib/IosLaptop";
-import IosCloud from "react-ionicons/lib/IosCloud";
 import IosDesktop from "react-ionicons/lib/IosDesktop";
 import IosGameControllerA from "react-ionicons/lib/IosGameControllerA";
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin";
@@ -12,11 +11,10 @@ import MdPlanet from "react-ionicons/lib/MdPlanet";
 
 const Hero = () => {
   const myThings = [
-    "User Interfaces",
-    "Websites",
-    "Mobile Apps",
     "Web Apps",
-    "APIs",
+    "Mobile Apps",
+    "Websites",
+    "User Interfaces",
     "Cool Stuff",
   ];
   const [index, setIndex] = React.useState(0);
@@ -31,24 +29,22 @@ const Hero = () => {
   let myInterval = setInterval(() => {
     clearInterval(myInterval);
     changeMyThings();
-  }, 3000);
+  }, 2000);
   let updateIcon = (index) => {
     switch (index !== undefined) {
       case index === 0:
-        return <IosSwitch className="inline" color="#F9D423" fontSize=".6em" />;
-      case index === 1:
-        return <IosLaptop className="inline" color="#F9D423" fontSize=".8em" />;
-      case index === 2:
-        return (
-          <PhonePortrait className="inline" color="#F9D423" fontSize=".8em" />
-        );
-      case index === 3:
         return (
           <IosDesktop className="inline" color="#F9D423" fontSize=".8em" />
         );
+      case index === 1:
+        return (
+          <PhonePortrait className="inline" color="#F9D423" fontSize=".8em" />
+        );
+      case index === 2:
+        return <IosLaptop className="inline" color="#F9D423" fontSize=".8em" />;
+      case index === 3:
+        return <IosSwitch className="inline" color="#F9D423" fontSize=".6em" />;
       case index === 4:
-        return <IosCloud className="inline" color="#F9D423" fontSize=".8em" />;
-      case index === 5:
         return <MdPlanet className="inline" color="#F9D423" fontSize=".8em" />;
       default:
         return (
