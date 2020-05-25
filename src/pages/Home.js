@@ -7,7 +7,7 @@ import ContactMe from "../components/ContactMe";
 import Footer from "../components/Footer";
 
 const HomePage = () => (
-  <div className="App">
+  <div className="App hero-gradient-background">
     <Navigation />
     <Hero />
     {/* <About /> */}
