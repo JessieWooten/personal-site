@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "./Layout.js";
-import Card from "./Card.js";
-import portfolioData from "../data/portfolio.json";
-import Logo from "../assets/FunpastaWeb.png";
-import FadeIn from "./FadeIn";
+import { Container, Row, Col } from "../Layout.js";
+import Card from "../Card.js";
+import portfolioData from "../../data/portfolio.json";
+import Logo from "../../assets/FunpastaWeb.png";
+import FadeIn from "../FadeIn";
 
 const Portfolio = () => {
   return (

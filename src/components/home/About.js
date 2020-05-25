@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "./Layout.js";
-import FadeInScroll from "./FadeIn";
-import JessiePic from "../assets/jessie_720.jpg";
+import { Container, Row, Col } from "../Layout.js";
+import FadeInScroll from "../FadeIn";
+import JessiePic from "../../assets/jessie_720.jpg";
 import styled from "styled-components";
 
 const About = () => (

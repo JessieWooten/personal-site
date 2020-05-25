@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "./Layout.js";
+import { Container, Row, Col } from "../Layout.js";
 import LogoLinkedin from "react-ionicons/lib/LogoLinkedin";
 import LogoGithub from "react-ionicons/lib/LogoGithub";
 import MailIcon from "react-ionicons/lib/IosMail";
