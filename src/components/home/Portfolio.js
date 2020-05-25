@@ -16,7 +16,7 @@ const Portfolio = () => {
           {portfolioData.map((piece, i) => (
             <Col
               key={i}
-              className="w-full md:w-1/2 lg:w-1/3 pr-4 pb-4 slide-in-bottom-with-fade animate600ms"
+              className="w-full md:w-1/2 lg:w-1/3 md:pr-4 pb-4 slide-in-bottom-with-fade animate600ms"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <Card
@@ -27,6 +27,7 @@ const Portfolio = () => {
                 backgroundImg={piece.backgroundImg}
                 title={piece.title}
                 description={piece.description}
+                tech={piece.tech}
               />
             </Col>
           ))}
