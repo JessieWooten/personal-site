@@ -9,7 +9,12 @@ const Portfolio = () => {
   return (
     <Container className="white-bg px-8 py-40 overflow-hidden">
       <Row>
-        <h2 className="title pb-8">My Work</h2>
+        <h2 className="title">My Work</h2>
+        <p className="black pt-4 pb-8 opacity-75 slide-in-bottom-with-fade animate600ms font-light">
+          I'm a self-taught developer from Nashville, TN. I'm always learning
+          new things and I love solving unique problems with web technologies!
+          Here are a few projects I've worked on recently.
+        </p>
       </Row>
       <FadeIn>
         <Row>
