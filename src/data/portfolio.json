@@ -28,6 +28,7 @@
     "foregroundImg": "bkon-developer-iphone.png",
     "title": "BKON Developer App",
     "description": "The BKON Developer allows recipe developers to create, edit, and brew recipes on BLE enabled BKON Craft Brewers. Once recipes are complete, seamlessly sync changes updates back to the Craft Cloud.",
-    "href": "https://apps.apple.com/us/app/bkon-developer/id1370076895"
+    "href": "https://apps.apple.com/us/app/bkon-developer/id1370076895",
+    "tech": "Vue.js, Swift, Java"
   }
 ]
