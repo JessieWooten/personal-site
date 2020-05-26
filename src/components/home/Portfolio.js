@@ -11,9 +11,9 @@ const Portfolio = () => {
       <Row>
         <h2 className="title">My Work</h2>
         <p className="black pt-4 pb-8 opacity-75 slide-in-bottom-with-fade animate600ms font-light">
-          I'm a self-taught developer from Nashville, TN. I'm always learning
-          new things and I love solving unique problems with web technologies!
-          Here are a few projects I've worked on recently.
+          I'm a self-taught developer from Nashville, TN. I have a passion for
+          web technologies and enjoy using them to solve unique problems. Here
+          are a few projects I've worked on recently.
         </p>
       </Row>
       <FadeIn>
