@@ -19,7 +19,7 @@ const Portfolio = () => {
               className="w-full md:w-1/2 lg:w-1/3 md:pr-4 pb-4 slide-in-bottom-with-fade animate600ms"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <a href={piece.href} target="_blank">
+              <a href={piece.href} target="_blank" rel="noopener noreferrer">
                 <Card
                   onClick={() => null}
                   foregroundImg={
