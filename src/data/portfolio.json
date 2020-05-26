@@ -1,29 +1,33 @@
 [
   {
-    "foregroundImg": "FunpastaWeb2.png",
+    "foregroundImg": "FunpastaWeb.png",
     "backgroundImg": "linear-gradient(#E86261, #CC3332)",
     "title": "Fun Pasta Fundraising",
     "description": "Complete website redesign, mobile fundraising app, and supporting backend service.",
-    "tech": "Vue.js, Node.js, Swift, Java."
+    "tech": "Vue.js, Node.js, Swift, Java.",
+    "href": "#"
   },
   {
     "foregroundImg": "SimpleWeather.png",
     "backgroundImg": "linear-gradient(#3B4A51, #1B2325)",
     "title": "Simple Weather",
-    "description": "A Google Chrome extension that gives a simple weather forecast.",
-    "tech": "React.js, Typescript, Node.js, Express, Heroku."
+    "description": "A Google Chrome extension that gives a simple current weather forecast.",
+    "tech": "React.js, Typescript, Node.js, Express, Heroku.",
+    "href": "https://chrome.google.com/webstore/detail/simple-weather/gfdfkmhjajkdnlcnbkdmjkmjikkkijal"
   },
   {
     "foregroundImg": "iPad-and-iPhone-with-logo.png",
     "backgroundImg": "linear-gradient(#E19377, #C05A42)",
     "title": "Band Director",
     "description": "A mobile app for band leaders to share chord changes in real time with their band. Band members receive changes on their device instantly, allowing the leader to take the band on an impromtu musical journey.",
-    "tech": "Vue.js, Swift, Java."
+    "tech": "Vue.js, Swift",
+    "href": "#"
   },
   {
     "backgroundImg": "linear-gradient(#9FDDC4, #66B892)",
     "foregroundImg": "bkon-developer-iphone.png",
-    "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and supporting backend service written in Vue.js, Node.js, Swift, and Java."
+    "title": "BKON Developer App",
+    "description": "The BKON Developer allows recipe developers to create, edit, and brew recipes on BLE enabled BKON Craft Brewers. Once recipes are complete, seamlessly sync changes updates back to the Craft Cloud.",
+    "href": "https://apps.apple.com/us/app/bkon-developer/id1370076895"
   }
 ]
