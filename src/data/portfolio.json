@@ -8,7 +8,7 @@
     "href": "#"
   },
   {
-    "foregroundImg": "SimpleWeather.png",
+    "foregroundImg": "simple-weather-mock.png",
     "backgroundImg": "linear-gradient(#3B4A51, #1B2325)",
     "title": "Simple Weather",
     "description": "A Google Chrome extension that gives a simple current weather forecast.",
