@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "../Layout.js";
 import Card from "../Card.js";
+import ProjectModal from "../Modal";
 import portfolioData from "../../data/portfolio.json";
 import Logo from "../../assets/FunpastaWeb.png";
 import FadeIn from "../FadeIn";
 
 const Portfolio = () => {
+  const [selectedPiece, setSelectedPiece] = useState(undefined);
   return (
     <Container className="white-bg px-8 py-40 overflow-hidden">
+      {selectedPiece && (
+        <ProjectModal
+          project={selectedPiece}
+          close={() => setSelectedPiece(undefined)}
+        />
+      )}
       <Row>
         <h2 className="title">My Work</h2>
         <p className="black pt-4 pb-8 opacity-75 slide-in-bottom-with-fade animate600ms font-light">
@@ -24,19 +32,16 @@ const Portfolio = () => {
               className="w-full md:w-1/2 lg:w-1/3 md:pr-4 pb-4 slide-in-bottom-with-fade animate600ms"
               style={{ animationDelay: `${i * 100}ms` }}
             >
-              <a href={piece.href} target="_blank" rel="noopener noreferrer">
-                <Card
-                  onClick={() => null}
-                  foregroundImg={
-                    piece.foregroundImg ||
-                    `http://${window.location.host}${Logo}`
-                  }
-                  backgroundImg={piece.backgroundImg}
-                  title={piece.title}
-                  description={piece.description}
-                  tech={piece.tech}
-                />
-              </a>
+              <Card
+                onClick={() => setSelectedPiece(piece)}
+                foregroundImg={
+                  piece.foregroundImg || `http://${window.location.host}${Logo}`
+                }
+                background={piece.background}
+                title={piece.title}
+                summary={piece.summary}
+                techs={piece.techs}
+              />
             </Col>
           ))}
         </Row>

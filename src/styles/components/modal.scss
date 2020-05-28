@@ -1,0 +1,35 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+.modal {
+  height: auto;
+  & .inner {
+    min-height: 40vh;
+    max-height: 90vh;
+  }
+  & p a {
+    color: $blue;
+    &:hover {
+      font-weight: 500;
+      color: darken($blue, 10%);
+    }
+  }
+  & ol {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+}
+
+.close-icon {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}

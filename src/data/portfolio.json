@@ -1,34 +1,118 @@
 [
   {
-    "foregroundImg": "FunpastaWeb.png",
-    "backgroundImg": "linear-gradient(#E86261, #CC3332)",
     "title": "Fun Pasta Fundraising",
-    "description": "Complete website redesign, mobile fundraising app, and supporting backend service.",
-    "tech": "Vue.js, Node.js, Swift, Java.",
-    "href": "#"
+    "foregroundImg": "FunpastaWeb.png",
+    "background": "linear-gradient(#E86261, #CC3332)",
+    "summary": "Complete website redesign, mobile fundraising app, and supporting backend service.",
+    "techs": ["Vue", "Node", "Express", "Swift", "Java", "MySQL"],
+    "href": "",
+    "details": [
+      {
+        "title": "Summary",
+        "text": "Fun Pasta Fundraising is a fundrasing company in Nashville, Tn. I was contracted by Tehgol Industries to design a new fontend web experience and mobile fundraising app. The app provides a digital, e-commerce style fundraising flow, equipped with sales and administrative tools. The mobile app aims to streamline the fundraising expericence by providing digital catelogs, providing automated fundraiser tracking, and providing simple sharing mechanisms. This is an ongoing project, but aims to be released during the Fall 2020 school season."
+      },
+      {
+        "title": "Mobile App",
+        "text": "The mobile app is a hybrid webview app: A combination of a Vue.js single page application (SPA) running inside of a native Swift (iOS) or Java (Android) webview wrapper. The core business logic is handled by the Vue.js app, equipped with a custom promise-based JavaScript communication interface that allows asynchronous resolution of native code. This exposes native features like Push Notifications, device sounds, or device hardware to be used by the JavaScript context."
+      },
+      {
+        "title": "Back End",
+        "text": "This project also featured a Node.js rewrite of the company's backend PHP application. I was respsonsible for writing a REST API (Express.js) to service the new frontend and Mobile App. The REST API connects to a MySQL database and handles all fundraiser transactions, user messaging, and entity management."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Coming soon to the App Store and Google Play Store!",
+        "href": ""
+      }
+    ]
   },
   {
-    "foregroundImg": "simple-weather-mock.png",
-    "backgroundImg": "linear-gradient(#3B4A51, #1B2325)",
     "title": "Simple Weather",
-    "description": "A Google Chrome extension that gives a simple current weather forecast.",
-    "tech": "React.js, Typescript, Node.js, Express, Heroku.",
-    "href": "https://chrome.google.com/webstore/detail/simple-weather/gfdfkmhjajkdnlcnbkdmjkmjikkkijal"
+    "foregroundImg": "simple-weather-mock.png",
+    "background": "linear-gradient(#3B4A51, #1B2325)",
+    "summary": "A Google Chrome extension that gives a simple current weather forecast.",
+    "techs": ["React", "Typescript", "Node", "Express"],
+    "href": "https://chrome.google.com/webstore/detail/simple-weather/gfdfkmhjajkdnlcnbkdmjkmjikkkijal",
+    "details": [
+      {
+        "title": "Summary",
+        "text": "Simple Weather a weather widget available in the Google Web Store. It takes your location and assembles a concise weather forecast with a high quality image."
+      },
+      {
+        "title": "Front End",
+        "text": "Simple Weather is a small TypeScript React app that was designed to be simple and intentional. Under the hood, the app uses the fetch API to make requests to the back end service, passing a location name or (soon to come) coordinates from Google Chrome's Geolocation API. It then recieves back a payload with forecast details, an image that matches the condition, and the photographer name"
+      },
+      {
+        "title": "Back End",
+        "htmlText": "The back end service combines the <a href=\"https://darksky.net\" target=\"_blank\">Dark Sky Weather API</a>, <a href=\"https://www.mapbox.com\" target=\"_blank\">MapBox Geolocation API</a>, and <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash Photo API</a> to create a cohesive weather experience. When a user passes a location name, the service uses MapBox's Geolation service to transform the place name into latitude and longitude coordinates. Those coordinates are passed to DarkSky's to retreive a current weather forecast. Finally, keywordsa are taken from the forecast and used to fetch a related random image from Upsplashes public image API. <br/><br/> To combat the inherent poor performance that using multiple 3rd party services can bring, the Simple Weather API caches location coordinates, forecast data, and image results so that repeat requests can be served up much faster."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "View in the Google Web Store!",
+        "link": "https://chrome.google.com/webstore/detail/simple-weather/gfdfkmhjajkdnlcnbkdmjkmjikkkijal"
+      }
+    ]
   },
   {
-    "foregroundImg": "iPad-and-iPhone-with-logo.png",
-    "backgroundImg": "linear-gradient(#E19377, #C05A42)",
     "title": "Band Director",
-    "description": "A mobile app for band leaders to share chord changes in real time with their band. Band members receive changes on their device instantly, allowing the leader to take the band on an impromtu musical journey.",
-    "tech": "Vue.js, Swift",
-    "href": "#"
+    "foregroundImg": "iPad-and-iPhone-with-logo.png",
+    "background": "linear-gradient(#E19377, #C05A42)",
+    "summary": "A mobile app for band leaders to share chord changes in real time with their band. Band members receive changes on their device instantly, allowing the leader to take the band on an impromtu musical journey.",
+    "techs": ["Vue", "Swift"],
+    "href": "https://apps.apple.com/us/app/band-director/id1514004297",
+    "details": [
+      {
+        "title": "Summary",
+        "text": "Band Director is a hybrid mobile app that allows a band leader to invite nearby devices to a session and send chord changes in real time. The app is comprised of a Vue.js single page application running a Swift native webview wrapper (Android version coming soon). App instances communicate over a local wifi network, allowing band leaders to accurately and instantly communicate with band members, despite loud stage volumes."
+      },
+      {
+        "title": "The UI",
+        "htmlText": "The Vue.js application handles the majority of the business logic, leveraging a custom JavaScript communication interface to allow it to envoke native Swift functionality (like starting an HTTP server or searching for users on the network). <br/><br/>The JS app uses touch events and touchmove tracking to simulate native gestures. Considering that most users will be playing an instrument while interacting with the app, is is important that users can use the application with just one finger. This interaction is a 3 step process: <ol><li>A user taps a note to select a base chord.</li><li>While touching a note, a modifier menu opens. Users drag over modifiers to select one.</li><li>Finally, a user releases on the desired modifier to send that chord to all session listeners (or on the cancel button).</li></ol> <br/>It's that simple!"
+      },
+      {
+        "title": "The Native Wrapper",
+        "htmlText": "The native wrapper handles two major parts of the application: <br/>1. It runs the webview and mounts the JavaScript bridge between the DOM and the Swift app, and <br/>2. It spins up a small HTTP server that sends and listens for session messages. When messages are received, they are parsed and funneled into appropriate JS callbacks. This is the bread-and-butter of how this hybrid approach works, facilitating the two softwares working in tandem and allowing the offload of more expensive tasks onto the device's processes and providing a smoother percieved experience from the JS app."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "View in the App Store!",
+        "link": "https://apps.apple.com/us/app/band-director/id1514004297"
+      }
+    ]
   },
   {
-    "backgroundImg": "linear-gradient(#9FDDC4, #66B892)",
-    "foregroundImg": "bkon-developer-iphone.png",
     "title": "BKON Developer App",
-    "description": "The BKON Developer allows recipe developers to create, edit, and brew recipes on BLE enabled BKON Craft Brewers. Once recipes are complete, seamlessly sync changes updates back to the Craft Cloud.",
+    "background": "linear-gradient(#9FDDC4, #66B892)",
+    "foregroundImg": "bkon-developer-iphone.png",
+    "summary": "The BKON Developer allows recipe developers to create, edit, and brew recipes on BLE enabled BKON Craft Brewers. Once recipes are complete, seamlessly sync updates back to the Craft Cloud.",
     "href": "https://apps.apple.com/us/app/bkon-developer/id1370076895",
-    "tech": "Vue.js, Swift, Java"
+    "techs": ["Vue", "Swift", "Java"],
+    "details": [
+      {
+        "title": "Summary",
+        "text": "The BKON Developer allows recipe developers to wireless develop and brew recipes with their BKON Craft Brewers. This app was a well received solution at a time where the only other option was to load a menu onto a thumbdrive and manually upload recipes onto a BKON machine. This app uses Bluetooth LE to wirelessly connect and communicate with BLE enable BKON Brewers and allows developers to save their finished creating to the BKON Craft Cloud. The app is comprised of a Vue.js single page application running in a Swift (iOS) or Java (Android) webview wrapper."
+      },
+      {
+        "title": "The UI",
+        "text": "The Vue.js application handles the majority of the business logic. It leverages a custom JavaScript communication interface that allows JavaScript to envoke native Swift functionality like sending data over Bluetooth LE, accessing device sounds, and saving files to the device. The app downloads menus from the BKON Craft Cloud and allows users to edit recipe parameters or create new recipes from scratch. Once complete, users save recipes to the device as JSON files, allowing recipe developers to work completely offline."
+      },
+      {
+        "title": "The Native Wrapper",
+        "htmlText": "The native wrapper handles two major parts of the application:<br/>1. It runs the webview and mounts the JavaScript bridge between the DOM and the native app, and<br/>2. It leverages device hardware to faciltitate Bluetooth LE communications, device storage, and device sounds. Once a device is connected to a BKON brewer, users can send recipes to the machine and receive machine status updates as it brews. During this process, JSON recipes are transformed into small, 20 byte data packets and transferred over BLE one at a time. Incoming messages are received the same way and reconstructed on the app side. Once complete messages are received, they are parsed and funneled to their corresponding JavaScript callbacks based on custom headers."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "View in the Google Play Store!",
+        "link": "https://play.google.com/store/apps/details?id=com.raphealprojects.bkon.developer2&hl=en_US"
+      },
+      {
+        "text": "View in the App Store!",
+        "link": "https://apps.apple.com/us/app/bkon-developer/id1370076895"
+      }
+    ]
   }
 ]
