@@ -41,11 +41,11 @@
       },
       {
         "title": "Front End",
-        "text": "Simple Weather is a small TypeScript React app that was designed to be simple and intentional. Under the hood, the app uses the fetch API to make requests to the back end service, passing a location name or (soon to come) coordinates from Google Chrome's Geolocation API. It then recieves back a payload with forecast details, an image that matches the condition, and the photographer name"
+        "text": "Simple Weather is a small TypeScript React app that was designed to be simple and intentional. Under the hood, the app uses the fetch API to make requests to the back end service, passing a location name or (soon to come) coordinates from Google Chrome's Geolocation API. It then receives back a payload with forecast details, an image that matches the condition, and the photographer name"
       },
       {
         "title": "Back End",
-        "htmlText": "The back end service combines the <a href=\"https://darksky.net\" target=\"_blank\">Dark Sky Weather API</a>, <a href=\"https://www.mapbox.com\" target=\"_blank\">MapBox Geolocation API</a>, and <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash Photo API</a> to create a cohesive weather experience. When a user passes a location name, the service uses MapBox's Geolation service to transform the place name into latitude and longitude coordinates. Those coordinates are passed to DarkSky's to retreive a current weather forecast. Finally, keywordsa are taken from the forecast and used to fetch a related random image from Upsplashes public image API. <br/><br/> To combat the inherent poor performance that using multiple 3rd party services can bring, the Simple Weather API caches location coordinates, forecast data, and image results so that repeat requests can be served up much faster."
+        "htmlText": "The back end service combines the <a href=\"https://darksky.net\" target=\"_blank\">Dark Sky Weather API</a>, <a href=\"https://www.mapbox.com\" target=\"_blank\">MapBox Geolocation API</a>, and <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash Photo API</a> to create a cohesive weather experience. When a user passes a location name, the service uses MapBox's Geolation service to transform the place name into latitude and longitude coordinates. Those coordinates are passed to DarkSky's to retreive a current weather forecast. Finally, keywords are taken from the forecast and used to fetch a related random image from Upsplashes public image API. <br/><br/> To combat the inherent poor performance that using multiple 3rd party services can bring, the Simple Weather API caches location coordinates, forecast data, and image results so that repeat requests can be served up much faster."
       }
     ],
     "buttons": [
@@ -74,6 +74,10 @@
       {
         "title": "The Native Wrapper",
         "htmlText": "The native wrapper handles two major parts of the application: <br/>1. It runs the webview and mounts the JavaScript bridge between the DOM and the Swift app, and <br/>2. It spins up a small HTTP server that sends and listens for session messages. When messages are received, they are parsed and funneled into appropriate JS callbacks. This is the bread-and-butter of how this hybrid approach works, facilitating the two softwares working in tandem and allowing the offload of more expensive tasks onto the device's processes and providing a smoother percieved experience from the JS app."
+      },
+      {
+        "title": "Demo",
+        "videoUrl": "https://www.youtube.com/embed/tyrlD2AxHVE"
       }
     ],
     "buttons": [
@@ -112,6 +116,34 @@
       {
         "text": "View in the App Store!",
         "link": "https://apps.apple.com/us/app/bkon-developer/id1370076895"
+      }
+    ]
+  },
+  {
+    "title": "BKON Craft Cloud",
+    "background": "linear-gradient(#FCDBAA, #F7B471)",
+    "foregroundImg": "craftcloud.png",
+    "summary": "The BKON Craft Cloud is the central hub for IOT enabled BKON Craft Brewers. It powers the BKON ecosystem by facilitating recipe creation and deploment, oversight of deployed machines, and management of user access and permissions.",
+    "href": "",
+    "techs": ["Vue", "Node", "Express", "MySQL", "Azure"],
+    "details": [
+      {
+        "title": "Summary",
+        "text": "The BKON Craft Cloud consists of a web app that serves as a content management system for recipes, stores, machines and user access and a backend service that is consumed by an iPad user interface app, a mobile service/support app, and the web app as they execute recipes, maintain machines, and report usage data."
+      },
+      {
+        "title": "Front End",
+        "htmlText": "The Craft Cloud's front end is a single page Vue.js application, leveraging Vuex as a state management solution, Vue Router for routing, Mixins for DRY adherance, and Vue Prop Validation. <br/>The app's key features include:  <ul><li>Recipe creation</li><li>Recipe approval and deployment</li><li>Machine management</li><li>User management</li><ul> Account admins can assign privileges to users that grant them access to certain feature sets accross BKON apps. For example, an admin may assign the role of 'Recipe Developer' to a user, granting the ability to create and edit recipe parameters in the web app and unlocking extra feature sets on the user interface app."
+      },
+      {
+        "title": "Back End",
+        "htmlText": "The back end service is comprised of a Node.js/Express.js REST api connected to a MySQL database, stood up on Microsoft Azure. The app follows Object Oriented Principles and uses a relational database model. The service is broken into 3 core resonsiblities: CRUD functionality for all data entites, user authentication, and Bluetooth LE connection authentication (between mobile apps and machines). <br/>A feature to highlight from this service is one that enforces a layer of Bluetooth LE security in the field. All devices must authenticate their connection to a BKON machine with the Craft Cloud when attempting to connect via Bluetooth LE. If a connection request between the two has not been approved in the cloud, the BLE connection will be be rejected and terminate."
+      }
+    ],
+    "buttons": [
+      {
+        "text": "Not accessible to public",
+        "link": ""
       }
     ]
   }
