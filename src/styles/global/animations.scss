@@ -11,6 +11,34 @@
   visibility: visible;
 }
 
+.fade-in {
+  animation: fadeIn;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 .slide-in-left-with-fade {
   animation: slideInLeftWithFade;
   animation-fill-mode: both;
