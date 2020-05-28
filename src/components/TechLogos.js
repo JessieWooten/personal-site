@@ -31,6 +31,12 @@ const TechLogos = ({ logos, className = "", style = {} }) => {
           img: "mysql.png",
           title: "MySQL",
         };
+      case "azure":
+        return {
+          className: "w-8 mr-2",
+          img: "azure.png",
+          title: "Microsoft Azure",
+        };
       default:
         return { className: "w-8 mr-2", img: "", title: "" };
     }
