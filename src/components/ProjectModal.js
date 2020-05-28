@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import CloseIcon from "./CloseIcon";
 import { Heading, SubHeading, Text } from "./Typeography";
 import TechLogos from "./TechLogos";
+import YoutubePlayer from "./YoutubePlayer";
 
 const ProjectModal = ({
   close,
@@ -12,7 +13,6 @@ const ProjectModal = ({
     summary,
     details,
     techs,
-    href,
     buttons,
   },
 }) => {
@@ -21,6 +21,21 @@ const ProjectModal = ({
   function handleClose() {
     overlayRef.current.classList.add("fade-out");
     setTimeout(close, 200);
+  }
+  function handleDetailContent({ videoUrl, text, htmlText }) {
+    if (videoUrl) {
+      return <YoutubePlayer src={videoUrl} />;
+    } else if (htmlText) {
+      return (
+        <Text
+          dangerouslySetInnerHTML={{
+            __html: htmlText,
+          }}
+        />
+      );
+    } else {
+      return <Text>{text}</Text>;
+    }
   }
   return (
     <div
@@ -66,15 +81,7 @@ const ProjectModal = ({
               details.map((detail, i) => (
                 <div className="pb-4" key={i}>
                   <SubHeading>{detail.title}</SubHeading>
-                  {detail.htmlText ? (
-                    <Text
-                      dangerouslySetInnerHTML={{
-                        __html: detail.htmlText,
-                      }}
-                    />
-                  ) : (
-                    <Text>{detail.text}</Text>
-                  )}
+                  {handleDetailContent(detail)}
                 </div>
               ))}
             <SubHeading>Technologies</SubHeading>
