@@ -27,6 +27,13 @@
   }
 }
 
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .close-icon {
   cursor: pointer;
   &:hover {

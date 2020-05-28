@@ -40,7 +40,7 @@ const ProjectModal = ({
           color="white"
           onClick={handleClose}
         />
-        <div className="w-full h-full overflow-y-auto overflow-x-hidden inner">
+        <div className="w-full h-full overflow-y-auto overflow-x-hidden inner hide-scroll-bar ">
           {/* Image  */}
           <div
             className="w-full flex items-center justify-center overflow-hidden p-8"
