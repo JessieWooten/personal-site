@@ -39,7 +39,7 @@ const ProjectModal = ({
           color="white"
           onClick={handleClose}
         />
-        <div className="w-full h-full overflow-auto inner">
+        <div className="w-full h-full overflow-y-auto overflow-x-hidden inner">
           {/* Image  */}
           <div
             className="w-full flex items-center justify-center overflow-hidden p-8"
@@ -79,7 +79,7 @@ const ProjectModal = ({
             <SubHeading>Technologies</SubHeading>
             <TechLogos className="justify-start mb-4" logos={techs} />
             {/* Buttons */}
-            <div class="flex items-center justify-center">
+            <div className="flex items-center justify-center">
               {Array.isArray(buttons) &&
                 buttons.map((button, i) => (
                   <a
