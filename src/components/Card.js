@@ -28,7 +28,7 @@ const Card = ({
         className="w-2/4 foreground-image"
       />
       <div className="p-3 info flex justify-center flex-col items-center">
-        <h3 className="text-sm font-bold">{title}</h3>
+        <h3 className="text-lg font-bold">{title}</h3>
         <p className="text-xs">{summary}</p>
         <TechLogos logos={techs} className="justify-center" />
       </div>
