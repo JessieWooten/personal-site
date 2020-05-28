@@ -32,6 +32,7 @@ const ProjectModal = ({
       <div
         className="modal w-10/12 md:w-6/12 white-bg rounded-lg relative overflow-hidden slide-in-bottom-with-fade animate400ms shadow-md"
         onClick={(e) => e.stopPropagation()}
+        style={{ animationDelay: "200ms" }}
       >
         <CloseIcon
           className="absolute top-0 right-0 p-4"
