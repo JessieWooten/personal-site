@@ -12,8 +12,20 @@ export const SubHeading = ({ children, className = "", style = {} }) => (
     {children}
   </h3>
 );
-export const Text = ({ children, className = "", style = {} }) => (
-  <p className={`text-gray-700 text-base pb-2 ${className}`} style={style}>
-    {children}
-  </p>
-);
+export const Text = ({
+  children,
+  className = "",
+  style = {},
+  dangerouslySetInnerHTML,
+}) =>
+  dangerouslySetInnerHTML ? (
+    <p
+      dangerouslySetInnerHTML={dangerouslySetInnerHTML}
+      className={`text-gray-700 text-base pb-2 ${className}`}
+      style={style}
+    />
+  ) : (
+    <p className={`text-gray-700 text-base pb-2 ${className}`} style={style}>
+      {children}
+    </p>
+  );
