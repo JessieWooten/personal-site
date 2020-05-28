@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "../Layout.js";
 import Card from "../Card.js";
-import ProjectModal from "../Modal";
 import portfolioData from "../../data/portfolio.json";
 import Logo from "../../assets/FunpastaWeb.png";
 import FadeIn from "../FadeIn";
 
-const Portfolio = () => {
-  const [selectedPiece, setSelectedPiece] = useState(undefined);
+const Portfolio = ({ setSelectedPiece }) => {
   return (
     <Container className="white-bg px-8 py-40 overflow-hidden">
-      {selectedPiece && (
-        <ProjectModal
-          project={selectedPiece}
-          close={() => setSelectedPiece(undefined)}
-        />
-      )}
       <Row>
         <h2 className="title">My Work</h2>
         <p className="black pt-4 pb-8 opacity-75 slide-in-bottom-with-fade animate600ms font-light">
