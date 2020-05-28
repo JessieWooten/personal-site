@@ -1,4 +1,5 @@
 import React from "react";
+import TechLogos from "./TechLogos";
 
 const Card = ({
   title,
@@ -29,7 +30,7 @@ const Card = ({
       <div className="p-3 info flex justify-center flex-col items-center">
         <h3 className="text-sm font-bold">{title}</h3>
         <p className="text-xs">{summary}</p>
-        <
+        <TechLogos logos={techs} className="justify-center" />
       </div>
     </div>
   );

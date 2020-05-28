@@ -1,6 +1,6 @@
 import React from "react";
 
-const TechLogos = (logos) => {
+const TechLogos = ({ logos, className = "", style = {} }) => {
   function getTechImage(tech) {
     switch (tech) {
       case "vue":
@@ -27,7 +27,7 @@ const TechLogos = (logos) => {
         };
       case "mysql":
         return {
-          className: "w-8 mr-2 flex-1",
+          className: "w-8 mr-2",
           img: "mysql.png",
           title: "MySQL",
         };
@@ -37,7 +37,10 @@ const TechLogos = (logos) => {
   }
   const imagesDir = require.context("../assets", true);
   return (
-    <div className="flex items-center justify-center flex-wrap mt-2">
+    <div
+      className={`flex items-center flex-wrap mt-21 ${className}`}
+      style={style}
+    >
       {logos.map((t, i) => {
         const tech = getTechImage(t.toLowerCase());
         return (
