@@ -8,7 +8,11 @@ import ProjectModal from "../components/ProjectModal";
 const HomePage = () => {
   const [selectedPiece, setSelectedPiece] = useState(undefined);
   return (
-    <div className="App hero-gradient-background">
+    <div
+      className={`App hero-gradient-background w-screen h-screen overflow-x-hidden ${
+        selectedPiece ? "overflow-y-hidden" : "overflow-y-auto"
+      }`}
+    >
       <Hero />
       <Portfolio setSelectedPiece={setSelectedPiece} />
       <ContactMe />
