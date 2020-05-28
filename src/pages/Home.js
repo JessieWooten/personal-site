@@ -3,7 +3,7 @@ import Hero from "../components/home/Hero";
 import Portfolio from "../components/home/Portfolio";
 import ContactMe from "../components/home/ContactMe";
 import Footer from "../components/Footer";
-import ProjectModal from "../components/Modal";
+import ProjectModal from "../components/ProjectModal";
 
 const HomePage = () => {
   const [selectedPiece, setSelectedPiece] = useState(undefined);
