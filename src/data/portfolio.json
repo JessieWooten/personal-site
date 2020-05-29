@@ -9,7 +9,7 @@
     "details": [
       {
         "title": "Summary",
-        "text": "Fun Pasta Fundraising is a fundrasing company in Nashville, Tn. I was contracted by Tehgol Industries to design a new fontend web experience and mobile fundraising app. The app provides a digital, e-commerce style fundraising flow, equipped with sales and administrative tools. The mobile app aims to streamline the fundraising expericence by providing digital catelogs, providing automated fundraiser tracking, and providing simple sharing mechanisms. This is an ongoing project, but aims to be released during the Fall 2020 school season."
+        "text": "Fun Pasta Fundraising is a fundrasing company in Nashville, Tn. I was contracted by Tehgol Industries to design a new fontend web experience and develop a mobile fundraising app. The app provides a digital, e-commerce style fundraising flow, equipped with sales and administrative tools. The mobile app aims to streamline the fundraising expericence by providing digital catelogs, providing automated fundraiser tracking, and providing simple sharing mechanisms. This is an ongoing project, but aims to be released during the Fall 2020 school season."
       },
       {
         "title": "Mobile App",
@@ -45,7 +45,7 @@
       },
       {
         "title": "Back End",
-        "htmlText": "The back end service combines the <a href=\"https://darksky.net\" target=\"_blank\">Dark Sky Weather API</a>, <a href=\"https://www.mapbox.com\" target=\"_blank\">MapBox Geolocation API</a>, and <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash Photo API</a> to create a cohesive weather experience. When a user passes a location name, the service uses MapBox's Geolation service to transform the place name into latitude and longitude coordinates. Those coordinates are passed to DarkSky's to retreive a current weather forecast. Finally, keywords are taken from the forecast and used to fetch a related random image from Upsplashes public image API. <br/><br/> To combat the inherent poor performance that using multiple 3rd party services can bring, the Simple Weather API caches location coordinates, forecast data, and image results so that repeat requests can be served up much faster."
+        "htmlText": "The back end service combines the <a href=\"https://darksky.net\" target=\"_blank\">Dark Sky Weather API</a>, <a href=\"https://www.mapbox.com\" target=\"_blank\">MapBox Geolocation API</a>, and <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash Photo API</a> to create a cohesive weather experience. When a user passes a location name to Simple Weather, the name gets passed to MapBox's Geolation service to transform the place name into latitude and longitude coordinates. Those coordinates are then passed to DarkSky's weather service to retreive a current weather forecast. Finally, keywords are extracted from the forecast response and used to fetch a related random image from Unsplash's public image API. <br/><br/> To combat the inherent poor performance that using multiple 3rd party services can bring, the Simple Weather API caches location coordinates, forecast data, and image results so that repeat requests can be served up much faster."
       }
     ],
     "buttons": [
