@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <footer className="w-full black-bg">
       <p className="text-center white p-4 font-thin text-sm">
-        © Jessie Wooten {new Date().getFullYear()}
+        Site made with React.js and Tailwind CSS | © Jessie Wooten{" "}
+        {new Date().getFullYear()}
       </p>
     </footer>
   );
