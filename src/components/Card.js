@@ -25,7 +25,8 @@ const Card = ({
       <img
         src={imagesDir(`./${foregroundImg}`)}
         alt={alt || ""}
-        className="w-2/4 foreground-image"
+        className="w-2/4 foreground-image fade-in animate400ms"
+        style={{ animationDelay: 200 }}
       />
       <div className="p-3 info flex justify-center flex-col items-center">
         <h3 className="text-lg font-bold">{title}</h3>
