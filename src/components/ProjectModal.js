@@ -45,7 +45,7 @@ const ProjectModal = ({
     >
       {/* Modal */}
       <div
-        className="modal w-10/12 md:w-6/12 white-bg rounded-lg relative overflow-hidden slide-in-bottom-with-fade animate400ms shadow-md"
+        className="modal w-10/12 xl:w-6/12 white-bg rounded-lg relative overflow-hidden slide-in-bottom-with-fade animate400ms shadow-md"
         onClick={(e) => e.stopPropagation()}
         style={{ animationDelay: "200ms" }}
       >

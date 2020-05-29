@@ -40,3 +40,22 @@
     opacity: 0.7;
   }
 }
+
+.youtube-player {
+  width: auto;
+  height: auto;
+  & iframe {
+    height: inherit;
+    width: inherit;
+  }
+}
+@media (min-width: 710px) {
+  .youtube-player {
+    width: 560px;
+    height: 315px;
+    & iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
