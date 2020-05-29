@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import CloseIcon from "./CloseIcon";
+import LogoGithub from "react-ionicons/lib/LogoGithub";
 import { Heading, SubHeading, Text } from "./Typeography";
 import TechLogos from "./TechLogos";
 import YoutubePlayer from "./YoutubePlayer";
@@ -80,7 +81,23 @@ const ProjectModal = ({
             {details &&
               details.map((detail, i) => (
                 <div className="pb-4" key={i}>
-                  <SubHeading>{detail.title}</SubHeading>
+                  <SubHeading className="flex items-center">
+                    {detail.title}
+                    {detail.repoUrl && (
+                      <a
+                        className="inline"
+                        href={detail.repoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <LogoGithub
+                          color="#010101"
+                          fontSize="1.8rem"
+                          className="blue-fill-hover pl-2"
+                        />
+                      </a>
+                    )}
+                  </SubHeading>
                   {handleDetailContent(detail)}
                 </div>
               ))}

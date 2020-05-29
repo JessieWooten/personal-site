@@ -41,10 +41,12 @@
       },
       {
         "title": "Front End",
+        "repoUrl": "https://github.com/JessieWooten/weather-app-widget",
         "text": "Simple Weather is a small TypeScript React app that was designed to be simple and intentional. Under the hood, the app uses the fetch API to make requests to the back end service, passing a location name or (soon to come) coordinates from Google Chrome's Geolocation API. It then receives back a payload with forecast details, an image that matches the condition, and the photographer name"
       },
       {
         "title": "Back End",
+        "repoUrl": "https://github.com/JessieWooten/weather-app-service",
         "htmlText": "The back end service combines the <a href=\"https://darksky.net\" target=\"_blank\">Dark Sky Weather API</a>, <a href=\"https://www.mapbox.com\" target=\"_blank\">MapBox Geolocation API</a>, and <a href=\"https://unsplash.com\" target=\"_blank\">Unsplash Photo API</a> to create a cohesive weather experience. When a user passes a location name to Simple Weather, the name gets passed to MapBox's Geolation service to transform the place name into latitude and longitude coordinates. Those coordinates are then passed to DarkSky's weather service to retreive a current weather forecast. Finally, keywords are extracted from the forecast response and used to fetch a related random image from Unsplash's public image API. <br/><br/> To combat the inherent poor performance that using multiple 3rd party services can bring, the Simple Weather API caches location coordinates, forecast data, and image results so that repeat requests can be served up much faster."
       }
     ],
@@ -69,6 +71,7 @@
       },
       {
         "title": "The UI",
+        "repoUrl": "https://github.com/JessieWooten/band-director-js",
         "htmlText": "The Vue.js application handles the majority of the business logic, leveraging a custom JavaScript communication interface to allow it to envoke native Swift functionality (like starting an HTTP server or searching for users on the network). <br/><br/>The JS app uses touch events and touchmove tracking to simulate native gestures. Considering that most users will be playing an instrument while interacting with the app, is is important that users can use the application with just one finger. This interaction is a 3 step process: <ol><li>A user taps a note to select a base chord.</li><li>While touching a note, a modifier menu opens. Users drag over modifiers to select one.</li><li>Finally, a user releases on the desired modifier to send that chord to all session listeners (or on the cancel button).</li></ol> <br/>It's that simple!"
       },
       {
