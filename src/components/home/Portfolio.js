@@ -13,8 +13,9 @@ const Portfolio = ({ setSelectedPiece }) => {
         <p className="black pt-4 pb-8 opacity-75 slide-in-bottom-with-fade animate600ms font-light">
           I'm a full stack JavaScript developer from Nashville, TN. I've been
           hooked on web development since 2016 and love building tools that make
-          life just a little bit easier. Here are a few projects I've worked on
-          recently!
+          life just a little bit easier. In case you're wondering, my mobile
+          apps are still JavaScript apps, just running in a native webview. Here
+          are a few projects I've worked on recently!
         </p>
       </Row>
       <FadeIn>
