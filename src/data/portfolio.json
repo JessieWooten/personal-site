@@ -4,7 +4,7 @@
     "foregroundImg": "FunpastaWeb.png",
     "background": "linear-gradient(#E86261, #CC3332)",
     "summary": "Complete website redesign, mobile fundraising app, and supporting backend service.",
-    "techs": ["Vue", "Node", "Express", "Swift", "Java", "MySQL"],
+    "techs": ["JavaScript", "Vue", "Node", "Express", "Swift", "Java", "MySQL"],
     "href": "",
     "details": [
       {
@@ -32,7 +32,7 @@
     "foregroundImg": "simple-weather-mock.png",
     "background": "linear-gradient(#3B4A51, #1B2325)",
     "summary": "A Google Chrome extension that gives a simple current weather forecast.",
-    "techs": ["React", "Typescript", "Node", "Express"],
+    "techs": ["JavaScript", "React", "Typescript", "Node", "Express"],
     "href": "https://chrome.google.com/webstore/detail/simple-weather/gfdfkmhjajkdnlcnbkdmjkmjikkkijal",
     "details": [
       {
@@ -62,7 +62,7 @@
     "foregroundImg": "iPad-and-iPhone-with-logo.png",
     "background": "linear-gradient(#E19377, #C05A42)",
     "summary": "A mobile app for band leaders to share chord changes in real time with their band. Band members receive changes on their device instantly, allowing the leader to take the band on an impromtu musical journey.",
-    "techs": ["Vue", "Swift"],
+    "techs": ["JavaScript", "Vue", "Swift"],
     "href": "https://apps.apple.com/us/app/band-director/id1514004297",
     "details": [
       {
@@ -96,7 +96,7 @@
     "foregroundImg": "bkon-developer-iphone.png",
     "summary": "The BKON Developer allows recipe developers to create, edit, and brew recipes on BLE enabled BKON Craft Brewers. Once recipes are complete, seamlessly sync updates back to the Craft Cloud.",
     "href": "https://apps.apple.com/us/app/bkon-developer/id1370076895",
-    "techs": ["Vue", "Swift", "Java"],
+    "techs": ["JavaScript", "Vue", "Swift", "Java"],
     "details": [
       {
         "title": "Summary",
@@ -128,7 +128,7 @@
     "foregroundImg": "craftcloud.png",
     "summary": "The BKON Craft Cloud is the central hub for IOT enabled BKON Craft Brewers. It powers the BKON ecosystem by facilitating recipe creation and deploment, oversight of deployed machines, and management of user access and permissions.",
     "href": "",
-    "techs": ["Vue", "Node", "Express", "MySQL", "Azure"],
+    "techs": ["JavaScript", "Vue", "Node", "Express", "MySQL", "Azure"],
     "details": [
       {
         "title": "Summary",

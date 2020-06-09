@@ -3,6 +3,8 @@ import React from "react";
 const TechLogos = ({ logos, className = "", style = {} }) => {
   function getTechImage(tech) {
     switch (tech) {
+      case "javascript":
+        return { className: "w-8 mr-2", img: "javascript.png", title: "JavaScript" };
       case "vue":
         return { className: "w-8 mr-2", img: "vue.png", title: "Vue.js" };
       case "react":
@@ -27,13 +29,13 @@ const TechLogos = ({ logos, className = "", style = {} }) => {
         };
       case "mysql":
         return {
-          className: "w-8 mr-2",
+          className: "h-8 mr-2",
           img: "mysql.png",
           title: "MySQL",
         };
       case "azure":
         return {
-          className: "w-8 mr-2",
+          className: "h-6 mr-2",
           img: "azure.png",
           title: "Microsoft Azure",
         };
