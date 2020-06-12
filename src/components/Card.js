@@ -30,8 +30,11 @@ const Card = ({
       />
       <div className="p-3 info flex justify-center flex-col items-center">
         <h3 className="text-lg font-bold">{title}</h3>
-        <p className="text-xs">{summary}</p>
+        <p className="text-xs mb-4">{summary}</p>
         <TechLogos logos={techs} className="justify-center" />
+        <button
+          className="blue-hover text-xs text-white font-bold py-1 px-2 mt-2 rounded focus:outline-none focus:shadow-outline"
+        >Learn More!</button>
       </div>
     </div>
   );
